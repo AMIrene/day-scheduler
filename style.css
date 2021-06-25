@@ -1,5 +1,6 @@
 :root {
   --teal: #2b6577;
+
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -85,4 +86,8 @@ font-weight: bold;
 
 .lead {
   margin-top: 20px;
+}
+
+.container {
+  color: var(--teal);
 }
