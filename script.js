@@ -39,20 +39,26 @@ saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");
     var taskEntry = $(this).siblings(".eventLog").val();
 
-    //event is then saved in local storage
+    //event entered is then saved in local storage
 
     localStorage.setItem(time, taskEntry);
 });
 
-//Timeblock colour changes based on past, present and future
-
-var currentHourdisplay = moment().hours();
-console.log(currentHourdisplay);
+//Text area colour changes based on past, present and future
 
 
-}
+//This sets the current hour for the day
 
-//when the current time equals current time (currentHourDisplay), change textarea element to red
+
+$(function () {
+    var currentHourdisplay = moment().hours();
+ if (currentHourdisplay === currentHourdisplay) {
+     $(".eventLog").addClass("present");
+ }
+
+})
+
+
 
 
 
