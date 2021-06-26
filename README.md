@@ -36,8 +36,8 @@ THEN the saved events persist
 
 The following provides screenshots of deployed page:
 
-![Browser View](./assets\browser_view.png)
-![Mobile View](/assets\mobile_view.png)
+![Browser View](assets\browser_view.png)
+![Mobile View](assets\mobile_view.png)
 
 Link to deployed page: https://amirene.github.io/day-scheduler/
 
