@@ -1,5 +1,5 @@
 
-
+var currentHourdisplay = moment().hours();
 //current day is displayed at the top of the calendar (in header element)
 
 //Vanilla JS
@@ -13,17 +13,9 @@
 
 //JQUERY
 
-let today = moment();
+var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
 
-//Timeblock changes based on past, present and future
-//Past is grey
-
-//Present is red
-
-
-
-//Future is green
 
 //User clicks calendar icon to save event in timeblock jquery
 
@@ -52,6 +44,22 @@ saveBtn.on("click", function () {
     localStorage.setItem(time, taskEntry);
 });
 
+//Timeblock colour changes based on past, present and future
+
+var currentHourdisplay = moment().hours();
+console.log(currentHourdisplay);
+
+
+}
+
+//when the current time equals current time (currentHourDisplay), change textarea element to red
+
+
+
+//for any hours from 9 am that have lapsed before the current time (currentHourDisplay), change textarea element to grey
+
+
+//for any hours after current time (currentHourDisplay), change textarea element to green
 
 
 
@@ -63,24 +71,5 @@ saveBtn.on("click", function () {
 
 
 
-//User clicks calendar icon button to save event in timeblock vanilla js
-// function saveEvent(event) {
-//     event.preventDefault();
-//     console.log(event)
-
-// const element = event.target;
-// console.log(element.dataset.time);
-
-// }
-// saveBtnEls.forEach(function (element){
-//     element.addEventListener('click', saveEvent)
-
-// });
 
 
-
-//saved in local storage
-
-
-
-//when page is refreshed, saved events remain
