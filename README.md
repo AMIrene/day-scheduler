@@ -46,6 +46,6 @@ The following provides screenshots of deployed page:
 https://amirene.github.io/day-scheduler/
 
 ## Resources 
-[Bootstrap] https://getbootstrap.com/docs/4.0/layout/grid/
-[MomentJS] https://momentjs.com/
-[FontAwesome] https://fontawesome.com/
+1. [Bootstrap] https://getbootstrap.com/docs/4.0/layout/grid/
+2. [MomentJS] https://momentjs.com/
+3. [FontAwesome] https://fontawesome.com/
