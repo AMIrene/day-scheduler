@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery, including Third Party APIs - [Moment.js](https://momentjs.com/) library to work with date and time, and [Bootstrap] (https://getbootstrap.com/docs/4.0/layout/grid/).
+Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery, including Third Party APIs - [Moment.js](https://momentjs.com/) library to work with date and time, and [Bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 ## Product
 
