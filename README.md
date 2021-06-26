@@ -36,10 +36,14 @@ THEN the saved events persist
 
 The following provides screenshots of deployed page:
 
+## Browser View 
 ![Browser View](assets\browser_view.png)
+
+## Mobile View
 ![Mobile View](assets\mobile_view.png)
 
-Link to deployed page: https://amirene.github.io/day-scheduler/
+## Link to deployed page:
+https://amirene.github.io/day-scheduler/
 
 ## Resources 
 https://getbootstrap.com/docs/4.0/layout/grid/
