@@ -1,11 +1,14 @@
 
-//current day is displayed at the top of the calendar (in header element)
+//DOM element: save button for saving task entry
+var saveBtn = $(".saveBtn");
 
+
+//current day is displayed at the top of the calendar (in header element)
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
 
 
-//Function to save event entered in timeblock 
+//Function to save task entered in timeblock 
 
 function saveEvent() {
 
@@ -15,22 +18,21 @@ function saveEvent() {
         //even when user refreshes browser, planner entry remains 
         var taskEntry = localStorage.getItem(timeOfday);
 
-        if (taskEntry !== null) {
+        if (taskEntry) {
             $(this).children(".eventLog").val(taskEntry);
         }
     });
 }
-//When user clicks calendar icon button
+//When user clicks calendar icon button, it saves entry and logs in local storage
 saveEvent();
-var saveBtn = $(".saveBtn");
 
 saveBtn.on("click", function () {
-    var time = $(this).parent().attr("id");
+    var timeBlock = $(this).parent().attr("id");
     var taskEntry = $(this).siblings(".eventLog").val();
 
     //event entered is then saved in local storage
 
-    localStorage.setItem(time, taskEntry);
+    localStorage.setItem(timeBlock, taskEntry);
 });
 
 //Text area colour changes based on past, present and future
