@@ -2,11 +2,7 @@
   --teal: #2b6577; 
 
 }
-p {
-margin-top: 5px; 
-font-size: large;  
 
-}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -98,3 +94,10 @@ font-weight: bold;
   color: var(--teal);
 }
 
+.footer-text {
+  margin-top: 5px; 
+  font-size: large;
+  color: var(--teal);
+  font-weight: bold;
+
+}

@@ -42,7 +42,7 @@ function colorChange() {
     var currentHourdisplay = moment().hours();
 
     /*Each timeblock has an id indicating which hour it represents, 
-    making it easy to compare the corresponding hour to the current hour
+    making it easy to compare the corresponding hour to the current hour using integer
     */
     $(".time-block").each(function () {
         var currentHour = parseInt($(this).attr("id"));
