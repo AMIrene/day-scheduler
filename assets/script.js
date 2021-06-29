@@ -26,7 +26,8 @@ function saveEvent() {
 //When user clicks calendar icon button, it saves entry and logs in local storage
 saveEvent();
 
-saveBtn.on("click", function () {
+saveBtn.on("click", function (e) {
+    e.preventDefault();
     var timeBlock = $(this).parent().attr("id");
     var taskEntry = $(this).siblings(".eventLog").val();
 
